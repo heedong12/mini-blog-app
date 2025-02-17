@@ -15,7 +15,7 @@ const MainTitleText = styled.p`
 
 function App() {
   return (
-    <BrowserRouter basename="/mini-blog-app">
+    <BrowserRouter basename="/blog">
       <MainTitleText>홍길동의 미니블로그</MainTitleText>
       <Routes>
         <Route path="/" element={<MainPage />} />
