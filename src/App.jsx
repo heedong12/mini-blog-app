@@ -15,10 +15,10 @@ const MainTitleText = styled.p`
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/blog">
       <MainTitleText>홍길동의 미니블로그</MainTitleText>
       <Routes>
-        <Route index element={<MainPage />} />
+        <Route path="/" element={<MainPage />} />
         <Route path="post-write" element={<PostWritePage />} />
         <Route path="post/:postId" element={<PostViewPage />} />
       </Routes>

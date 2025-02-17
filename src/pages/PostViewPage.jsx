@@ -100,7 +100,7 @@ function PostViewPage(props) {
     const updatedPosts = storedPosts.filter((item) => item.id != postId);
 
     localStorage.setItem("posts", JSON.stringify(updatedPosts));
-    navigate("/");
+    navigate("/blog");
   };
 
   if (!post) {
@@ -114,7 +114,7 @@ function PostViewPage(props) {
         <Button
           title="뒤로 가기"
           onClick={() => {
-            navigate("/");
+            navigate("/blog");
           }}
         />
 

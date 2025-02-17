@@ -42,7 +42,7 @@ function PostWritePage() {
     localStorage.setItem("posts", JSON.stringify(existingPosts));
 
     // 홈 페이지로 이동
-    navigate("/");
+    navigate("/blog");
   };
 
   return (
